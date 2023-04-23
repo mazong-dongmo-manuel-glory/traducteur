@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}" type="image/x-icon">
+    <title>Translator</title>
+</head>
+<body>
+    <header>
+        <span class="logo">{%include "icon.svg" %}</span>
+        <span class="logoName">Traducteur Maz</span>
+        <span class="menu">
+            <a href="https://ozoowi.herokuapp.com">ozoowi</a>
+            <a href="https://zonedegeek.blogspot.com">zonedegeek</a>
+            <a href="https://ozoowi.herokuapp.com/about">A propos</a>
+        </span>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h3>Entrer</h3>
+            <div class="content">           
+                 <input class="langE">
+                <textarea class="enter">
+    
+                </textarea>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Sorite</h3>
+            <div class="content">
+                <input class="langS">
+                <textarea class="outer" readonly>
+    
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <button class="run">Traduire</button>
+    <script type="text/javascript" src="/static/app.js"></script>
+</body>
+</html>

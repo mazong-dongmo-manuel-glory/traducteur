@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    src: url("/static/VarelaRound-Regular.ttf");
+    font-family:vera;
+}
+@font-face{
+    src: url("/static/DancingScript-Regular.ttf");
+    font-family: Dance;
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.9;
+    font-family: Dance;
+    height: 100vh;
+    max-height: max-content;
+    background: url("/static/19742.jpg") center no-repeat;
+    background-size: cover;
+}
+header{
+    background-color:white;
+    height: 70px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    padding: 10px;
+    line-height: 50px;
+}
+.logo{
+    width: 370px;
+    height: 37px;
+}
+.logo svg{
+    width: 37px;
+    height: 37px;
+}
+span.logoName{
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.container{
+    display: flex;
+    width: 60%;
+    background: white;
+    position: relative;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    font-family: vera;
+}
+.box{
+    width: 50%;
+    padding: 10px;
+}
+.box h3{
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    margin: 1% 1%;
+    outline: none;
+    border: 1px solid rgb(201, 201, 201);
+}
+textarea{
+    height: 30vh;
+    font-family: vera;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    font-weight: bolder;
+    font-size:20px;
+}
+.box textarea{
+    resize: none;
+    border-radius: 10px;
+    cursor: pointer;
+    content: "";
+    padding: 10px;
+}
+input{
+    border:  1px solid rgb(218, 218, 218);
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform:uppercase;
+}
+button{
+    box-sizing:10px 10px 20px rgba(0,0,0,.12);
+    display: block;
+    width: 120px;
+    padding: 10px;
+    margin: 10px auto;
+    background: rgb(5, 92, 255);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-family: vera;
+    cursor: pointer;
+    outline: none;
+}
+@media screen and (max-width:500px){
+    .container{
+        width: 100%;
+    }
+    .menu a{
+        margin: 5px;
+    }
+    .menu{
+        display: block;
+    }
+}
+.menu{
+    float: right;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20;
+    color: dodgerblue;
+    margin: 10px;
+}
